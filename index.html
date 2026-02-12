@@ -323,6 +323,13 @@
                 0 0 3px rgba(255, 255, 255, 0.4),
                 0 0 6px rgba(255, 255, 255, 0.2);
         }
+    /* Bloquear selección de texto */
+html, body {
+  -webkit-user-select: none; /* Chrome / Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE */
+  user-select: none;         /* Estándar */
+}
   </style>
 </head>
 <body>
@@ -605,4 +612,5 @@ document.addEventListener('keydown', function(e) {
 });
 </script>
 </body>
+
 </html>
